@@ -116,6 +116,8 @@ export default function Header({
           <div className="relative" ref={dropdownRef}>
             <button
               id="year-dropdown-button"
+              aria-label="Select year"
+              aria-expanded={isYearDropdownOpen}
               onClick={() => setIsYearDropdownOpen(!isYearDropdownOpen)}
               className="flex items-center gap-2 px-3.5 py-2 rounded-xl border border-slate-200 bg-white text-xs sm:text-sm font-semibold text-slate-700 hover:bg-slate-50 hover:border-slate-300 transition-all shadow-2xs"
             >
